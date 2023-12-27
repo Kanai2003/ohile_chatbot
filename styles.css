@@ -62,7 +62,7 @@ body {
 
 /* chat box styles */
 .chat-container {
-    max-width: 60%;
+    width: 60%;
     margin: 20px auto;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -110,7 +110,7 @@ button {
 }
 
 button:hover {
-    background-color: linear-gradient(to right, #a80de1, #bbcd18);
+    background-color: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
 }
 
 .user {
@@ -123,16 +123,36 @@ button:hover {
     margin-bottom: 8px;
 }
 
-@media(max-width: 600px) {
+@media( width <= 600px) {
     .chat-container {
         width: 100%;
         border-radius: 0;
-    }
-}
-/* @media (min-width: 450px) {
-    input-container{
         display: flex;
         flex-direction: column;
     }
+
+    .input-container {
+        flex-direction: column;
+        width: 90%;
+        padding: 0%;
+    }
+
+    #userInput{
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-right{
+        display: none;
+    }
+    .navbar-left{
+        display: none;
+    }
     
-} */
+
+}
+
