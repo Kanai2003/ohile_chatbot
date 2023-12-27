@@ -110,7 +110,7 @@ button {
 }
 
 button:hover {
-    background-color: #1609a9;
+    background-color: linear-gradient(to right, #a80de1, #bbcd18);
 }
 
 .user {
